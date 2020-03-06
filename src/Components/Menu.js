@@ -76,6 +76,7 @@ const useStyles = makeStyles(theme => ({
     },
     '&:link': {
       textDecoration: 'none',
+      color: 'white',
     },
     '&:active': {
       textDecoration: 'none',
@@ -106,22 +107,22 @@ function Menu(props) {
       <List>
           <ListItem className={classes.listItem} component='a' href='/'>
             <ListItemIcon><HomeIcon className={classes.icon} /></ListItemIcon>
-            <ListItemText primary='Home' />
+            <ListItemText primary='Hjem' />
           </ListItem>
           <ListItem className={classes.listItem} component='a' href='/gallery'>
             <ListItemIcon><CameraAltIcon className={classes.icon} /></ListItemIcon>
-            <ListItemText primary='Gallery' />
+            <ListItemText primary='Galleri' />
           </ListItem>
           <ListItem className={classes.listItem} component='a' href='/bw'>
-            <ListItemIcon><CameraAltIcon className={classes.icon} /></ListItemIcon>
+            <ListItemIcon><CameraAltIcon /></ListItemIcon>
             <ListItemText primary='B&W' />
           </ListItem>
       </List>
       <Divider className={classes.divider}/>
       <List>
-          <ListItem className={classes.listItem}>
+          <ListItem className={classes.listItem} component='a' href='/about'>
             <ListItemIcon><InfoIcon className={classes.icon}/></ListItemIcon>
-            <ListItemText primary="About" />
+            <ListItemText primary="Om" />
           </ListItem>
       </List>
     </div>
